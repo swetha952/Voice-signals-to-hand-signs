@@ -59,7 +59,7 @@ try:
     found = False
     for key in gesture_map:
         if key in text:
-            img = Image.open(gesture_map[key])
+            img = Image.open("handsigns/" + gesture_map[key])
             img.show()
             found = True
             break
